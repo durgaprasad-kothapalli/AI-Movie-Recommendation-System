@@ -1,0 +1,217 @@
+
+AI-Based Movie Recommendation System
+1. Project Overview
+1.1 Project Title
+
+AI-Based Movie Recommendation System
+
+1.2 Problem Statement
+
+With thousands of movies available on streaming platforms, users often struggle to find movies that match their interests and preferences. Traditional search methods consume time and may not provide personalized recommendations. There is a need for an intelligent recommendation system that suggests relevant movies based on user interests, ratings, and viewing behavior.
+
+1.3 Objective
+
+The objective of this project is to develop an AI-powered movie recommendation web application that provides personalized movie suggestions using Hybrid Recommendation techniques. The system combines Content-Based Filtering and Collaborative Filtering to improve recommendation accuracy and user experience.
+
+1.4 Target Users
+Movie Enthusiasts
+College Students
+OTT Platform Users
+General Entertainment Users
+1.5 Project Type
+
+✅ AI/ML Based Web Application
+
+2. Functional Requirements
+2.1 User Features
+User Registration and Login
+Search Movies
+View Movie Details
+Get Personalized Recommendations
+Add Movies to Watchlist
+Rate Movies
+View Similar Movies
+2.2 Recommendation Features
+
+The system provides recommendations using:
+
+Content-Based Filtering
+
+Recommends movies based on:
+
+Genres
+Keywords
+Cast
+Movie descriptions
+Collaborative Filtering
+
+Recommends movies based on:
+
+User ratings
+Similar user preferences
+Watching behavior
+Hybrid Recommendation
+
+Combines both techniques for better accuracy.
+
+2.3 Additional Features
+Trending Movies Section
+Recently Viewed Movies
+Responsive UI
+Live Search Suggestions
+3. Dataset Information
+Dataset Used
+
+✅ MovieLens Dataset
+
+The dataset contains:
+
+Movie titles
+Genres
+Ratings
+User IDs
+Tags
+Libraries Used
+Pandas
+NumPy
+Scikit-learn
+Flask
+React
+4. System Architecture
+Frontend
+React
+Backend
+Flask
+AI/ML Module
+Python
+Scikit-learn
+Database
+MongoDB
+System Flow
+
+User → React Frontend → Flask API → ML Recommendation Engine → MongoDB → Response to User
+
+5. Database Design
+5.1 User Collection
+user_id
+username
+email
+password
+5.2 Movies Collection
+movie_id
+title
+genre
+description
+poster_url
+5.3 Ratings Collection
+rating_id
+user_id
+movie_id
+rating
+5.4 Watchlist Collection
+watchlist_id
+user_id
+movie_id
+6. AI/ML Workflow
+Step 1
+
+Load MovieLens Dataset
+
+Step 2
+
+Clean and preprocess data
+
+Step 3
+
+Extract movie features
+
+Step 4
+
+Apply recommendation algorithms
+
+Step 5
+
+Generate personalized recommendations
+
+Step 6
+
+Display recommendations in frontend
+
+7. Recommendation Algorithms
+7.1 Content-Based Filtering
+
+Uses:
+
+TF-IDF Vectorization
+Cosine Similarity
+
+Purpose:
+Recommend similar movies based on movie content.
+
+7.2 Collaborative Filtering
+
+Uses:
+
+User-item matrix
+Similarity scoring
+
+Purpose:
+Recommend movies based on similar users.
+
+7.3 Hybrid Recommendation
+
+Combines:
+
+Content-Based results
+Collaborative results
+
+Purpose:
+Improve recommendation quality and personalization.
+
+8. API Design
+Authentication APIs
+POST /register
+
+Register new user
+
+POST /login
+
+Login user
+
+Movie APIs
+GET /movies
+
+Fetch all movies
+
+GET /movie/{id}
+
+Fetch movie details
+
+GET /recommend/{movie_id}
+
+Get movie recommendations
+
+Rating APIs
+POST /rate
+
+Submit movie rating
+
+Watchlist APIs
+POST /watchlist
+
+Add movie to watchlist
+
+GET /watchlist/{user_id}
+
+Fetch watchlist
+
+9. Frontend Pages
+Home Page
+Login/Register Page
+Movie Search Page
+Recommendation Page
+Watchlist Page
+User Profile Page
+10. Conclusion
+
+The AI-Based Movie Recommendation System helps users discover movies efficiently using intelligent recommendation algorithms. The project improves user experience by providing personalized suggestions and demonstrates the practical implementation of AI/ML concepts in web applications.
